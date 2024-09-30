@@ -9,10 +9,10 @@ class Program
         while (playAgain)
         {
             int Player1hp = 200;
-            int Player2hp = 200;
+            int Player2hp = 200; 
 
             string Player1name = "Player1";
-            string Player2name = "Player2";
+            string Player2name = "Player2"; 
 
             Random random = new Random();
 
@@ -22,7 +22,7 @@ class Program
 
             bool isPlayer1 = playerChoice == "player1";
 
-           
+
             if (isPlayer1)
             {
                 Console.WriteLine("Du spelar som Player1!");
@@ -33,7 +33,7 @@ class Program
             }
 
             Console.WriteLine("Tryck på Enter för att börja slåss!");
-            Console.ReadLine(); 
+            Console.ReadLine();
 
             Console.WriteLine("Lycka till!");
 
@@ -42,9 +42,9 @@ class Program
                 Console.ReadLine();
 
                 int damageToPlayer1 = random.Next(1, 50);
-                int damageToPlayer2 = random.Next(1, 50); 
+                int damageToPlayer2 = random.Next(1, 50);
 
-                
+
                 if (isPlayer1)
                 {
                     Player2hp -= damageToPlayer1;
